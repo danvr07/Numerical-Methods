@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Numerical-Methods">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/checker.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Exemple.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

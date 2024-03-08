@@ -1,0 +1,64 @@
+------------------------------------Task 1------------------------------------
+
+1. Pentru prima functia voi citi numarul de linii si de coloane ale matricii
+dintr un fisier, dupa acest lucru se convertesc string urile in numere intregi
+si se citeste matricea din fisier sarind peste nr de linii si nr de coloane.
+
+2. Am verificat in care directie fiecare element al matricei are perete.
+Daca ma pot mute din poz i in pozitia j, atunci elemntul ij a matricei de 
+adicenta ia valoarea 1. Pentru win si lose verificam in care pozitie ne aflam
+Stim ca win este doar atunci cand ne mutam la nord sau la sud, iar lose la vest
+sau est, in aceste cazuri daca dam de margine spunem ca este lose sau win si
+adaugam campurile la amtricea de adiacenta.
+
+3. La functie get_link_matric am folosit codul de la functia matricei de adiacenta
+doar ca matricea Link era popilata cu numere 1 / numarul de cai posibile
+verificam cate cai posibile sunt si incrementam nr_cai cu 1.
+
+4. Pentru functia get_Jacobi, am luat doar liniile si coloanele fara ultimele 2
+care sunt pentru win si lose pentru matricea G, iar pentru vectorul de iteratie
+am laut doar linia si coloana de win uri, stiind ca este penultima.
+
+5. Pentru functia perform_iterative am folosit un for pentru a itera pana la numarul
+maxim de iteratii, calculand eroarea finala, apoi se verifica convergenta, daca 
+toleranta data ca argument va fi mai mica sau egala cu eroare atunci se incheie
+programul.
+
+6. Funcția inițializeaza o serie de variabile, inclusiv o matrice de vizita
+pentru a tine evidenta nodurilor deja vizitate, o cale inițială care conține
+doar locația de început și o variabilă WIN care reprezintă locația finală.
+Apoi, se alege nodul cu cea mai bună valoare euristică și se actualizează 
+poziția curentă și calea.
+
+7. Mai intai, se initializeaza o matrice vida de dimensiunea potrivita pentru
+a contine perechi de coordonate pentru fiecare element din cale.
+Apoi, pentru fiecare element din cale, se calculeaza linia si coloana
+corespunzatoare utilizand formule.
+Aceste coordonate sunt apoi adaugate la matricea de perechi.
+
+------------------------------------Task 2------------------------------------
+
+1. Functia aloca o matrice initiala ca o celula cu dimensiunea adecvata
+si citeste fiecare rand din fisier, impartind fiecare rand in valori separate 
+utilizand separatorul de spatii.
+Fiecare valoare citita este apoi stocata in matricea initiala la pozitia 
+corespunzatoare.
+La final, functia returneaza vectorul Y si matricea initiala actualizata,
+fara coloana cu valorile Y.
+
+------------------------------------Task 3------------------------------------
+
+1. Functia load_dataset incarca datele dintr un fisier .mat si le returneaza
+sub forma de matrice si vector.
+
+2. Functia împarte aleatoriu indicii amestecati în seturi de antrenare și testare
+si folosește acești indici pentru a imparti datele din x și y în seturi de antrenare 
+si testare corespunzătoare. Funcția returnează seturile de date
+de antrenare si testare.
+
+3. Functia calculeaza o valoare pentru epsilon folosind o formulă specifică.
+Apoi, matricea de ponderi este inițializată cu valori aleatoare în intervalul
+ (-epsilon, epsilon], Pentru acest lucru am folosit rand.
+
+--------------------------------------------------------------------------------
+Doresc corectarea manuala a testelor pentru tema 1.
